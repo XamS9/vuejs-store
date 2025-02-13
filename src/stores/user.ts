@@ -28,10 +28,10 @@ export const useUserStore = defineStore("user", {
         const params = { username: name, email, password };
 
         const response = await register(params);
-        this.user = response;
-        localStorage.setItem("user_token", response.token);
+        this.user = response.user;
+        localStorage.setItem("user_token", response.jwt);
       } catch (error) {
-        console.error("Login failed:", error);
+        console.error("Register failed:", error);
         throw error;
       }
     },
