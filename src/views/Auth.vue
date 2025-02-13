@@ -16,7 +16,8 @@ const handleLogin = async (credentials: Record<string, any>) => {
   try {
     await userStore.login(credentials.email, credentials.password);
     router.push("/");
-  } catch (error) {
+  } catch (error: any) {
+    window.alert("Login failed: " + error.message);
     console.error("Login failed:", error);
   }
 };
