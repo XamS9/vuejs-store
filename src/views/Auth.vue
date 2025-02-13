@@ -24,12 +24,7 @@ const handleLogin = async (credentials: Record<string, any>) => {
 
 const handleRegister = async (userData: Record<string, any>) => {
   try {
-    await userStore.register(
-      userData.email,
-      userData.password,
-      userData.confirmPassword,
-      userData.name
-    );
+    await userStore.register(userData.email, userData.password, userData.name);
     router.push("/");
   } catch (err: any) {
     console.log(err.message);

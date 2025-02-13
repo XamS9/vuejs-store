@@ -3,7 +3,7 @@
     <v-app-bar-title>Our Store</v-app-bar-title>
     <v-spacer></v-spacer>
     <span style="padding-right: 6px" @click="handleSignOut">{{
-      user?.email
+      user?.user.email
     }}</span>
     <v-btn icon @click="$emit('toggle-cart')">
       <v-badge :content="cartItemCount" color="error">

@@ -3,7 +3,7 @@
     <v-card-title>{{ product.name }}</v-card-title>
     <v-card-text>
       <p>Price: ${{ Number(product.price).toFixed(2) }}</p>
-      <p>Category: {{ "category" }}</p>
+      <p>Category: {{ product.category.name }}</p>
     </v-card-text>
     <v-card-actions>
       <v-btn color="primary" @click="$emit('add-to-cart', product)">

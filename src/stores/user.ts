@@ -12,31 +12,20 @@ export const useUserStore = defineStore("user", {
   actions: {
     async login(email: string, password: string) {
       try {
-        const params = new URLSearchParams();
-        params.append("email", email);
-        params.append("password", password);
+        const params = { identifier: email, password };
 
         const response = await login(params);
         this.user = response;
-        localStorage.setItem("user_token", response.token);
+        localStorage.setItem("user_token", response.jwt);
       } catch (error) {
         console.error("Login failed:", error);
         throw error;
       }
     },
 
-    async register(
-      email: string,
-      password: string,
-      confirmPassword: string,
-      name: string
-    ) {
+    async register(email: string, password: string, name: string) {
       try {
-        const params = new URLSearchParams();
-        params.append("email", email);
-        params.append("name", name);
-        params.append("password", password);
-        params.append("c_password", confirmPassword);
+        const params = { username: name, email, password };
 
         const response = await register(params);
         this.user = response;
@@ -54,7 +43,7 @@ export const useUserStore = defineStore("user", {
       const token = localStorage.getItem("user_token");
       if (token) {
         const validate = await fetchUserData();
-        this.user = { ...validate, token };
+        this.user = { user: validate, jwt: token };
       }
     },
   },

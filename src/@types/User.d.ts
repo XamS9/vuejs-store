@@ -1,22 +1,22 @@
 interface User {
+  jwt: string;
+  user: LoggedUser;
+}
+
+interface LoggedUser {
   id: number;
-  uuid: string;
-  name: string;
-  address: string;
-  phone: string;
+  username: string;
   email: string;
-  email_verified_at: string | null;
-  lat: number | null;
-  lng: number | null;
-  bulk_products: number;
-  bulk_offer: number;
-  avatar: string | null;
-  rating: number;
-  punctuation: number;
-  role_id: number;
-  status: number;
-  code_password: string | null;
-  date_code_password: string | null;
-  created_at: string | null;
-  updated_at: string | null;
+  createdAt: string;
+}
+
+interface UserRegisterData {
+  username: string;
+  email: string;
+  password: string;
+}
+
+interface LoginCredentials {
+  identifier: string;
+  password: string;
 }

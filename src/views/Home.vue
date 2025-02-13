@@ -41,7 +41,7 @@ const filteredProducts = computed(() => {
       .includes(searchQuery.value.toLowerCase());
     const matchesCategory =
       searchCategory.value === "All" ||
-      product.categories.some((cat) => cat.name === searchCategory.value);
+      product.category.name === searchCategory.value;
     return matchesSearch && matchesCategory;
   });
 });
