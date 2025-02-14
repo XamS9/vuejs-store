@@ -8,6 +8,16 @@ Vuejs-Store-Backend is a headless CMS powered by Strapi, designed to serve as th
 - 🔐 **Authentication & Authorization** - Secure user authentication with JWT.
 - 🚀 **REST APIs** - API options for frontend integration.
 
+## ENV Variables
+
+1. Create a copy of:
+   ```
+   .env.template
+   ```
+   and rename it to '.env'
+   
+2. For testing purpose you can go on with that, otherwise modify this '.env' file with your preferences.
+
 ## Installation
 
 Make sure you have [Node.js](https://nodejs.org/)
@@ -28,6 +38,8 @@ Make sure you have [Node.js](https://nodejs.org/)
    ```
    http://localhost:1337/admin
    ```
+   
+5. Create your local admin account
 
 ## Build for Production
 
@@ -40,11 +52,14 @@ npm start
 
 ## Import mock data
 
-After running the server and login with your local strapi user account, in the sidebar menu go to 'import/export'.
+1. Stop the strapi service
 
-2. Click in 'import'
+2. In the command line, write:
+   ```
+   npm run strapi import -- -f mock.gz
+   ```
 
-3. Find the 'mock.json' file and upload it
+3. Start the server again
 
 ## Technologies Used
 
