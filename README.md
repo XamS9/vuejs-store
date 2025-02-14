@@ -10,6 +10,20 @@ Vuejs-Store is a simple e-commerce application built using Vue.js. It provides a
 - 🌎 **Responsive Design** - Optimized for both desktop and mobile devices.
 - ⚡ **Fast & Lightweight** - Powered by Vue.js for a smooth user experience.
 
+## ENV Variable
+1. Create a copy of:
+```
+.env.template
+```
+and rename it '.env'
+1. Add the url of the backend to:
+```
+VITE_API_URL
+```
+2. The url should end with /api, example:
+```
+http://localhost:1337/api
+```
 
 ### PLEASE NOTE: TO MAKE IT WORK AS EXPECTED, FIRST GO TO THE BACKEND FOLDER AND INITIALIZE THE API
 ## Installation
