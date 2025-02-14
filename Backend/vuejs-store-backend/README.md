@@ -13,11 +13,13 @@ Vuejs-Store-Backend is a headless CMS powered by Strapi, designed to serve as th
 Make sure you have [Node.js](https://nodejs.org/)
 
 2. Install dependencies:
+
    ```sh
    npm install
    ```
 
 3. Start the development server:
+
    ```sh
    npm run develop
    ```
@@ -30,10 +32,19 @@ Make sure you have [Node.js](https://nodejs.org/)
 ## Build for Production
 
 To create a production-ready build:
+
 ```sh
 npm run build
 npm start
 ```
+
+## Import mock data
+
+After running the server and login with your local strapi user account, in the sidebar menu go to 'import/export'.
+
+2. Click in 'import'
+
+3. Find the 'mock.json' file and upload it
 
 ## Technologies Used
 

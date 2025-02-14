@@ -1,0 +1,85 @@
+{
+	"version": 2,
+	"data": {
+		"api::product.product": {
+			"3": {
+				"id": 3,
+				"documentId": "db0br6yajzj1cca6xead5w2d",
+				"name": "Smartphone Case",
+				"description": "Durable and stylish smartphone case with shock resistance.",
+				"price": 19.99,
+				"createdAt": "2025-02-13T21:33:00.100Z",
+				"updatedAt": "2025-02-13T21:33:00.100Z",
+				"publishedAt": null,
+				"locale": null,
+				"category": 2,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"4": {
+				"id": 4,
+				"documentId": "lplkoo36gqe871o4z6eicybb",
+				"name": "Running Shoes",
+				"description": "Lightweight and comfortable running shoes for daily exercise.",
+				"price": 79.99,
+				"createdAt": "2025-02-13T21:34:05.250Z",
+				"updatedAt": "2025-02-13T21:34:05.250Z",
+				"publishedAt": null,
+				"locale": null,
+				"category": 3,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"5": {
+				"id": 5,
+				"documentId": "iyuzr2et2qoxx43mt9ojm9gv",
+				"name": "Bluetooth Speaker",
+				"description": "Portable Bluetooth speaker with deep bass and clear sound.",
+				"price": 59.99,
+				"createdAt": "2025-02-13T21:35:15.890Z",
+				"updatedAt": "2025-02-13T21:35:15.890Z",
+				"publishedAt": null,
+				"locale": null,
+				"category": 2,
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			}
+		},
+		"api::categorie.categorie": {
+			"2": {
+				"id": 2,
+				"documentId": "nj8pfibncqocle2nrlr41kgq",
+				"name": "Accessories",
+				"createdAt": "2025-02-13T21:37:30.980Z",
+				"updatedAt": "2025-02-14T01:36:19.933Z",
+				"publishedAt": "2025-02-14T01:36:19.921Z",
+				"locale": null,
+				"products": [
+					5,
+					3
+				],
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"3": {
+				"id": 3,
+				"documentId": "qdjklgox08awont4s5iowagb",
+				"name": "Sportswear",
+				"createdAt": "2025-02-13T21:38:45.110Z",
+				"updatedAt": "2025-02-14T01:36:14.019Z",
+				"publishedAt": "2025-02-14T01:36:14.010Z",
+				"locale": null,
+				"products": [
+					4
+				],
+				"localizations": [],
+				"createdBy": null,
+				"updatedBy": null
+			}
+		}
+	}
+}
