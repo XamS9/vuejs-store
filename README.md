@@ -10,6 +10,8 @@ Vuejs-Store is a simple e-commerce application built using Vue.js. It provides a
 - 🌎 **Responsive Design** - Optimized for both desktop and mobile devices.
 - ⚡ **Fast & Lightweight** - Powered by Vue.js for a smooth user experience.
 
+
+### PLEASE NOTE: TO MAKE IT WORK AS EXPECTED, FIRST GO TO THE BACKEND FOLDER AND INITIALIZE THE API
 ## Installation
 
 Make sure you have [Node.js](https://nodejs.org/) installed.
