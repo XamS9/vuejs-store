@@ -7,14 +7,17 @@ defineProps<{
 }>();
 
 defineEmits<{
-  (e: 'toggle-cart'): void;
+  (e: "toggle-cart"): void;
 }>();
 </script>
 
 <template>
   <v-container class="fill-height" fluid>
-    <Navbar @toggle-cart="$emit('toggle-cart')" :cartItemCount="cartItemCount"/>
-    <v-main> 
+    <Navbar
+      @toggle-cart="$emit('toggle-cart')"
+      :cartItemCount="cartItemCount"
+    />
+    <v-main>
       <slot></slot>
     </v-main>
     <Footer />
